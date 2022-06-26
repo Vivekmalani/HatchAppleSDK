@@ -14,6 +14,7 @@
 		048873B1286820720089BFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048873AF286820720089BFAA /* Main.storyboard */; };
 		048873B3286820740089BFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048873B2286820740089BFAA /* Assets.xcassets */; };
 		048873B6286820740089BFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048873B4286820740089BFAA /* LaunchScreen.storyboard */; };
+		048873BC2868218F0089BFAA /* HatchApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048873BB2868218F0089BFAA /* HatchApple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		048873B2286820740089BFAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048873B5286820740089BFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048873B7286820740089BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048873BB2868218F0089BFAA /* HatchApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchApple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				0488739C2868202B0089BFAA /* HatchAppleSDK.h */,
+				048873BB2868218F0089BFAA /* HatchApple.swift */,
 			);
 			path = HatchAppleSDK;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					048873982868202B0089BFAA = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					048873A6286820720089BFAA = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048873BC2868218F0089BFAA /* HatchApple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 		048873A12868202B0089BFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -379,6 +385,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,6 +394,7 @@
 		048873A22868202B0089BFAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
